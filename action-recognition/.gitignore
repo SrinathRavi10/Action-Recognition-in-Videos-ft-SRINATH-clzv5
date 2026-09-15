@@ -1,0 +1,33 @@
+# Datasets (never commit raw video data)
+data/UCF101_subset/
+data/_raw_ucf101/
+data/frame_cache/
+*.avi
+*.mp4
+
+# Model checkpoints (large binary files)
+checkpoints/
+*.pt
+*.pth
+
+# Generated outputs
+outputs/
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+env/
+*.egg-info/
+
+# Streamlit / downloaded model assets
+.streamlit/
+*.task
+
+# Environment / OS
+.env
+.DS_Store
+pyvenv.cfg
