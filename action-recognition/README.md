@@ -250,6 +250,34 @@ _Fill in after training on the full 101 classes:_
 See `outputs/classification_report.txt` and `outputs/confusion_matrix.png`
 for the full per-class breakdown.
 
+## Citations
+
+This project uses publicly available pretrained weights, cited here explicitly per the project brief's requirement that pretrained weights be "publicly available and properly cited."
+
+**Model architecture and pretrained weights:**
+
+Tran, D., Wang, H., Torresani, L., Ray, J., LeCun, Y., & Paluri, M. (2018). *A Closer Look at Spatiotemporal Convolutions for Action Recognition*. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
+[https://arxiv.org/abs/1711.11248](https://arxiv.org/abs/1711.11248)
+
+Pretrained weights obtained via torchvision's official model zoo:
+`torchvision.models.video.R2Plus1D_18_Weights.KINETICS400_V1`
+[https://docs.pytorch.org/vision/stable/models/video_resnet.html](https://docs.pytorch.org/vision/stable/models/video_resnet.html)
+
+**Pretraining dataset (Kinetics-400):**
+
+Kay, W., Carreira, J., Simonyan, K., Zhang, B., Hillier, C., Vijayanarasimhan, S., Viola, F., Green, T., Back, T., Natsev, P., Suleyman, M., & Zisserman, A. (2017). *The Kinetics Human Action Video Dataset*. arXiv preprint.
+[https://arxiv.org/abs/1705.06950](https://arxiv.org/abs/1705.06950)
+
+**Fine-tuning dataset (UCF101):**
+
+Soomro, K., Zamir, A. R., & Shah, M. (2012). *UCF101: A Dataset of 101 Human Actions Classes From Videos in The Wild*. CRCV-TR-12-01.
+[https://www.crcv.ucf.edu/data/UCF101.php](https://www.crcv.ucf.edu/data/UCF101.php)
+
+**Pose estimation (for the visualization/demo features, not part of the core classification model):**
+
+Bazarevsky, V., Grishchenko, I., Raveendran, K., Zhu, T., Zhang, F., & Grundmann, M. (2020). *BlazePose: On-device Real-time Body Pose tracking*. arXiv preprint, used via Google's MediaPipe Pose Landmarker.
+[https://arxiv.org/abs/2006.10204](https://arxiv.org/abs/2006.10204)
+
 ## Possible Extensions
 
 - Add optical-flow input as a second stream (Two-Stream Network)
